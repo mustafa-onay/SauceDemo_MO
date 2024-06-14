@@ -4,7 +4,7 @@ Feature: Login Functionality
   Background:
     Given user is on the login page
 
-  @wip
+
   Scenario Outline: positive login test with DDT
     When user enters "<username>" username "<password>" password and clicks on the login button
     Then verify that user can see "Products" on the Dashboard
@@ -16,7 +16,6 @@ Feature: Login Functionality
       | error_user              | secret_sauce |
       | visual_user             | secret_sauce |
 
-  @wip2
   Scenario Outline: negative login test with DDT "<username>"
     When user enters "<username>" username "<password>" password and clicks on the login button
     #Then verify that user can see "Products" on the Dashboard
@@ -27,4 +26,4 @@ Feature: Login Functionality
       |                        | secret_sauce | Epic sadface: Username is required                                        |
       | erformance_glitch_user | seret_sauce  | Epic sadface: Username and password do not match any user in this service |
       | error_user68           | secret_sauce | Epic sadface: Username and password do not match any user in this service |
-      |                        |              | Epic sadface: Username is required                                        |
+      | locked_out_user        | secret_sauce | Epic sadface: Username is required                                        |

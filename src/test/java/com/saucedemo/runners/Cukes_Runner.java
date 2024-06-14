@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/feature",
         glue = "com/saucedemo/step_defs",
         dryRun = false,
-        tags = "@wip2"
+        tags = "@wip"
 
 
 
